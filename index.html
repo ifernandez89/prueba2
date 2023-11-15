@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="index.css">
+    <title>React App</title>
+  </head>
+  <body>
+    <button id="idButtonChange">Change Style</button>
+    <button id="idButtonReset">Reset Style</button>
+    <p id="idParagraph2" class="paragraphOriginal">This is another paragraph.</p>
+
+    <p id="saludo">¡HOLA MUNDO!</p>
+    <button id="boton">HOLA MUNDO</button>
+  </body>
+
+<script>
+ var boton = document.getElementById("boton");
+  var p=document.getElementById("saludo");
+
+  boton.addEventListener('click',function(){
+      console.log('Me diste click');
+      p.style.color="red";
+  })
+ 
+  boton.addEventListener('mouseover',function(){
+      console.log('He detectado el ratón');
+      p.style.backgroundColor="yellow";
+  })
+  boton.addEventListener('mouseout',function(){
+      console.log('Adiós ratón');
+      p.style.backgroundColor="blue";
+  })
+  //////////////////////////////////////////////////////
+
+</script>
+<script src="index.js"></script>
+</html>
